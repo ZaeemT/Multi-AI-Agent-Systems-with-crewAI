@@ -32,6 +32,11 @@ def get_serper_api_key():
     openai_api_key = os.getenv("SERPER_API_KEY")
     return openai_api_key
 
+def get_scraper_api_key():
+    load_env()
+    key = os.getenv("SCRAPER_API_KEY")
+    return key
+
 
 # break line every 80 characters if line is longer than 80 characters
 # don't break in the middle of a word
